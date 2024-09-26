@@ -40,7 +40,7 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Welcome`{event.sender.first_name}`!I am an auto-forwarding bot!\n\nPlease wait while this bot initialise ... initialisation complete!!!",
+        f"Welcome `{event.sender.first_name}`! I am an auto-forwarding bot!\n\n♥♥♥♥ Message forwarding activated!!! ♥♥♥♥",
         buttons=[
             Button.url("Source", url="https://github.com/xditya/ChannelAutoForwarder"),
             Button.url("Support me", url="https://shpe.site/kittycatty"),
@@ -52,7 +52,7 @@ async def _(event):
 @datgbot.on(events.NewMessage(pattern="/help"))
 async def helpp(event):
     await event.reply(
-        "**Help**\n\nThis bot will forward all new posts automatically.\nIt can be used only in two channels at a time.\n\nAdd me to both the channels and make me an admin in both, and all new messages would be autoposted on the linked channel!!\n\nDrop a ♥ :)"
+        "**Help**\n\nThis bot will forward all new posts automatically.\nIt can be used only in two channels at a time.\n\nAdd the bot to both the channels as admin, and all new messages will be auto-forwarded on the linked channel!!\n\nDrop a me a ♥ :)"
     )
 
 
