@@ -40,9 +40,9 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Welcome!!! `{event.sender.first_name}`!\n\nI I am an auto-forwarding bot!\nPlease wait while this bot initialise ...",
+        f"Welcome`{event.sender.first_name}`!I am an auto-forwarding bot!\n\nPlease wait while this bot initialise ... initialisation complete!!!",
         buttons=[
-            Button.url("Source code", url="https://github.com/xditya/ChannelAutoForwarder"),
+            Button.url("Source", url="https://github.com/xditya/ChannelAutoForwarder"),
             Button.url("Support me", url="https://shpe.site/kittycatty"),
         ],
         link_preview=False,
