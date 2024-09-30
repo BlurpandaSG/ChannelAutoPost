@@ -40,13 +40,13 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Welcome `{event.sender.first_name}`! I am an auto-forwarding bot!\n\n♥♥♥♥ Message forwarding activated!!! ♥♥♥♥",
-        buttons=[
-            Button.url("Source", url="https://github.com/xditya/ChannelAutoForwarder"),
-            Button.url("Support me", url="https://shpe.site/kittycatty"),
-        ],
-        link_preview=False,
-    )
+    f"Welcome **{event.sender.first_name}**! I am an auto-forwarding bot!\n\n♥♥♥♥ **Message forwarding activated!!!** ♥♥♥♥",
+    buttons=[
+        Button.url("Source", url="https://github.com/xditya/ChannelAutoForwarder"),
+        Button.url("Support me", url="https://shpe.site/kittycatty"),
+    ],
+    link_preview=False,
+)
 
 
 @datgbot.on(events.NewMessage(pattern="/help"))
